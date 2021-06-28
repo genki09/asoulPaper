@@ -120,7 +120,7 @@ def playCal(num):
 def cardCal(num):
     url = 'https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/space_history?' \
           'visitor_uid={}&host_uid={}&offset_dynamic_id=0&need_top=1'\
-          .format(7122735, gv.giveMid(num))
+          .format(712273, gv.giveMid(num))
     url = url.format(gv.giveMid(num))
     r = req.get(url).text
     rt = json.loads(r)
@@ -139,7 +139,7 @@ def cardCal(num):
 
     url = 'https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/space_history?' \
           'visitor_uid={}&host_uid={}&offset_dynamic_id={}&need_top=1'\
-          .format(7122735, gv.giveMid(num), dynamic_id_str)
+          .format(712273, gv.giveMid(num), dynamic_id_str)
     url = url.format(gv.giveMid(num))
     r = req.get(url).text
     rt = json.loads(r)
